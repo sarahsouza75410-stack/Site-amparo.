@@ -71,4 +71,131 @@
     .service-card {
       background: white;
       padding: 20px;
-      border-radius:
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      color: #1e6091;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background-color: #dbe9f4;
+      padding: 25px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .contact p {
+      margin: 8px 0;
+    }
+
+    a {
+      color: #1e6091;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #2a6f97;
+      color: white;
+      padding: 20px 10px;
+      margin-top: 30px;
+    }
+
+    /* Botão fixo do WhatsApp */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      z-index: 100;
+      transition: transform 0.2s;
+    }
+
+    .whatsapp-button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Amparo Sênior Core" />
+    <h1>Amparo Sênior Core</h1>
+    <p class="highlight">Cuidando com amor, respeito e dedicação</p>
+  </header>
+
+  <section class="about">
+    <h2>Sobre Nós</h2>
+    <p>A <strong>Amparo Sênior Core</strong> nasceu com a missão de oferecer cuidado humanizado e apoio integral aos idosos e suas famílias. Nossa equipe é formada por profissionais experientes, comprometidos com a saúde, conforto e bem-estar de cada pessoa assistida.</p>
+    <p>Com carinho, atenção e responsabilidade, transformamos o cuidado em um gesto de amor.</p>
+  </section>
+
+  <section class="services">
+    <h2>Nossos Serviços</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>🩺 Cuidadores de Idosos</h3>
+        <p>Profissionais qualificados para acompanhamento diário, apoio nas atividades e supervisão de saúde.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>🍽️ Assistência Domiciliar</h3>
+        <p>Auxílio com alimentação, higiene, mobilidade e administração de medicamentos, com todo o carinho.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>💬 Acompanhamento Emocional</h3>
+        <p>Conversas, companhia e estímulos cognitivos para promover bem-estar emocional e social.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>🚗 Acompanhamento em Consultas</h3>
+        <p>Transporte e suporte presencial em consultas médicas, exames e compromissos diversos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="contact">
+      <h2>Entre em Contato</h2>
+      <p>📞 WhatsApp: <a href="https://wa.me/5511914953623" target="_blank">(11) 91495-3623</a></p>
+      <p>📧 E-mail: <a href="mailto:contato@amparoseniorcore.com.br">contato@amparoseniorcore.com.br</a></p>
+      <p>📍 Endereço: São Paulo - SP</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Amparo Sênior Core — Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão WhatsApp -->
+  <a
+    href="https://wa.me/5511914953623"
+    class="whatsapp-button"
+    target="_blank"
+    aria-label="Conversar no WhatsApp"
+  >
+    💬
+  </a>
+</body>
+  </html>
